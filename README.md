@@ -131,7 +131,7 @@ This command installs all dependencies defined in the pubspec.yaml file, includi
 
 --- 
 
-### Firebase Configuration
+## Firebase Configuration
 
 SUNote uses Firebase for authentication, database management, and file storage. The application will not function correctly without proper Firebase setup.
 **1.**Create a Firebase project using the Firebase Console
@@ -170,7 +170,7 @@ All tests pass successfully when running flutter test.
 
 --- 
 
-####Known Limitations and Bugs
+##Known Limitations and Bugs
 
 - The application does not include a real payment gateway (e.g., Stripe). Purchase functionality is simulated to meet course requirements.
 - Firestore comments are stored inside note documents rather than as separate subcollections. This simplifies implementation but may limit scalability.
