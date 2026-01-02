@@ -25,6 +25,7 @@ The app is designed for **Sabancı University students** who value organized, cr
 
 ### Test Cases 
 Widget test: WelcomeScreen’de Login/Sign Up butonlarının doğru route’a gittiğini doğrular.
+
 Unit test: ThemeProvider’ın SharedPreferences’tan tema değerini okuyup toggle sonrası kalıcı kaydettiğini doğrular.
 
 ---
