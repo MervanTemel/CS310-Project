@@ -22,6 +22,9 @@ The app is designed for **Sabancı University students** who value organized, cr
 5. **Sabancı Email Authentication:** Ensures a secure and verified student-only network.
 
 ---
+### Test Cases 
+Widget test: WelcomeScreen’de Login/Sign Up butonlarının doğru route’a gittiğini doğrular.
+Unit test: ThemeProvider’ın SharedPreferences’tan tema değerini okuyup toggle sonrası kalıcı kaydettiğini doğrular.
 
 ### Optional (Nice-to-Have) Features  
 - **Anonymous Q&A Threads:** Dedicated spaces for academic discussions.  
