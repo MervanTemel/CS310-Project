@@ -183,7 +183,11 @@ All tests pass successfully when running flutter test.
 ## Team Members and Contributions
 
 **Kaan Merdol** – Project Coordinator & Backend Integration
+
 **Mustafa Mervan Temel** – Integration & Repository Management
+
 **Fatma Ilgın Puhur** – Documentation & Submission
+
 **Alp Pişkin** – Testing & Quality Assurance
+
 **Efe Kaan Baydan** – Presentation & Video Recording
