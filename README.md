@@ -150,13 +150,14 @@ SUNote uses Firebase for authentication, database management, and file storage. 
 **Running the Application**
 
 After completing the setup and Firebase configuration, run the application using:
-**flutter run** 
+
+- flutter run 
 
 An emulator must be running or a physical device must be connected before executing this command.
 
 ---
 
-##Running Tests##
+## Running Tests##
 All tests included in the project can be executed using:
 
 **flutter test**
@@ -170,7 +171,7 @@ All tests pass successfully when running flutter test.
 
 --- 
 
-##Known Limitations and Bugs
+## Known Limitations and Bugs
 
 - The application does not include a real payment gateway (e.g., Stripe). Purchase functionality is simulated to meet course requirements.
 - Firestore comments are stored inside note documents rather than as separate subcollections. This simplifies implementation but may limit scalability.
