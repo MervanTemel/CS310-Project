@@ -109,7 +109,7 @@ This structure ensures consistent state across screens, minimizes redundant data
    Install dependencies
 - **flutter pub get
 - 
-###Firebase Configuration
+##Firebase Configuration
   
 **Create a Firebase project
 **Enable Authentication (Email/Password)
@@ -130,14 +130,14 @@ This structure ensures consistent state across screens, minimizes redundant data
 **Ensures that ThemeProvider correctly persists theme selection using SharedPreferences.
 **All tests pass successfully using flutter test.
 
-###Known Limitations / Bugs
+##Known Limitations / Bugs
 **The application does not include a real payment gateway (e.g., Stripe); purchase logic is simulated for course requirements.
 **Firestore comments are stored within note documents rather than as separate subcollections, which may limit scalability.
 **No admin moderation panel is implemented.
 **Performance may degrade with very large datasets due to Firestore document size limits.
 **These limitations are acknowledged and considered acceptable within the scope of the CS310 course project.
 
-###Team Members & Contributions
+##Team Members & Contributions
 **Kaan Merdol — Project Coordinator & Backend Integration
 **Mustafa Mervan Temel — Integration & Repository Management
 **Fatma Ilgın Puhar — Documentation & Submission
