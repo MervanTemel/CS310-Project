@@ -100,11 +100,11 @@ This structure ensures consistent state across screens, minimizes redundant data
 - **Firebase Project:** Configured for Android and/or iOS  
 - **Android Studio / Xcode:** For emulator or device testing  
 
-Step-by-Step Setup
-1. Clone the Repository
-Clone the project repository and navigate into the project directory.
-git clone <repository-url>
-cd SUNote
+## Step-by-Step Setup
+- ** 1. Clone the Repository
+- ** Clone the project repository and navigate into the project directory.
+- ** git clone <repository-url>
+- ** cd SUNote
 2. Install Dependencies
 Install all required Flutter packages.
 flutter pub get
