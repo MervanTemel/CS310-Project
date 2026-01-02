@@ -1,0 +1,199 @@
+# SUNote - Flutter Project .gitignore
+# Created for Sabancı University Note Sharing Platform
+
+# Miscellaneous
+*.class
+*.log
+*.pyc
+*.swp
+.DS_Store
+.atom/
+.buildlog/
+.history
+.svn/
+migrate_working_dir/
+
+# IntelliJ related
+*.iml
+*.ipr
+*.iws
+.idea/
+
+# The .vscode folder contains launch configuration and tasks you configure in
+# VS Code which you may wish to be included in version control, so this line
+# is commented out by default.
+#.vscode/
+
+# Flutter/Dart/Pub related
+**/doc/api/
+**/ios/Flutter/.last_build_id
+.dart_tool/
+.flutter-plugins
+.flutter-plugins-dependencies
+.packages
+.pub-cache/
+.pub/
+/build/
+
+# Symbolication related
+app.*.symbols
+
+# Obfuscation related
+app.*.map.json
+
+# Android Studio will place build artifacts here
+/android/app/debug
+/android/app/profile
+/android/app/release
+
+# iOS/XCode related
+**/ios/**/*.mode1v3
+**/ios/**/*.mode2v3
+**/ios/**/*.moved-aside
+**/ios/**/*.pbxuser
+**/ios/**/*.perspectivev3
+**/ios/**/*sync/
+**/ios/**/.sconsign.dblite
+**/ios/**/.tags*
+**/ios/**/.vagrant/
+**/ios/**/DerivedData/
+**/ios/**/Icon?
+**/ios/**/Pods/
+**/ios/**/.symlinks/
+**/ios/**/profile
+**/ios/**/xcuserdata
+**/ios/.generated/
+**/ios/Flutter/.last_build_id
+**/ios/Flutter/App.framework
+**/ios/Flutter/Flutter.framework
+**/ios/Flutter/Flutter.podspec
+**/ios/Flutter/Generated.xcconfig
+**/ios/Flutter/ephemeral
+**/ios/Flutter/app.flx
+**/ios/Flutter/app.zip
+**/ios/Flutter/flutter_assets/
+**/ios/Flutter/flutter_export_environment.sh
+**/ios/ServiceDefinitions.json
+**/ios/Runner/GeneratedPluginRegistrant.*
+
+# Android related
+**/android/**/gradle-wrapper.jar
+**/android/.gradle
+**/android/captures/
+**/android/gradlew
+**/android/gradlew.bat
+**/android/local.properties
+**/android/**/GeneratedPluginRegistrant.java
+**/android/key.properties
+*.jks
+*.keystore
+
+# Firebase related - IMPORTANT FOR SECURITY
+**/android/app/google-services.json
+**/ios/Runner/GoogleService-Info.plist
+**/ios/firebase_app_id_file.json
+.firebase/
+firebase-debug.log
+firestore-debug.log
+ui-debug.log
+firebase.json
+.firebaserc
+
+# Firebase Functions (if you use them later)
+**/functions/node_modules/
+**/functions/.env
+
+# Environment variables and sensitive data
+.env
+.env.local
+.env.production
+.env.development
+*.env
+secrets.yaml
+config.json
+
+# API Keys and credentials
+**/lib/config/api_keys.dart
+**/lib/config/secrets.dart
+
+# Coverage
+coverage/
+
+# Web related
+lib/generated_plugin_registrant.dart
+
+# Exceptions to above rules - if needed
+!/packages/flutter_tools/test/data/dart_dependencies_test/**/.packages
+!/dev/ci/**/Gemfile.lock
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Linux
+*~
+
+# Testing
+test/mock_data/
+*.test.dart.js
+*.test.dart.js.map
+
+# Documentation (auto-generated)
+doc/api/
+
+# Build artifacts
+*.apk
+*.aab
+*.ipa
+*.app
+*.dSYM.zip
+*.dSYM
+
+# Local development
+.vscode/
+.fleet/
+.project
+.classpath
+.settings/
+
+# Temporary files
+*.tmp
+*.temp
+*.bak
+*.swp
+*~.nib
+
+# User-specific files
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Firebase Emulator data
+*-debug.log
+*.log
+
+# Package files (don't ignore pubspec files!)
+# .flutter-plugins and .flutter-plugins-dependencies are already listed above
+
+# Custom SUNote specific ignores
+# Add any project-specific files here
+uploads/
+test_uploads/
+local_cache/
+
+# Database exports (if you export Firestore data locally)
+*.json.backup
+firestore_export/
+
+# Payment integration secrets (Stripe, PayPal, etc.)
+**/lib/services/payment_secrets.dart
+
+# Analytics and tracking IDs
+**/lib/config/analytics_config.dart
