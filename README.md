@@ -1,44 +1,108 @@
-# CS310-Project
-### Short Description  
-SUNote is a mobile platform built exclusively for Sabancı University students to **share, sell, and purchase lecture notes and summaries instantly**. All materials are neatly organized by **Course → Term → Week**, allowing students to find the right content in seconds. The app promotes speed, structure, and collaboration, creating a reliable and student-driven academic ecosystem where contributors can also earn income from their notes.
+# SUNote – CS310 Mobile Application Development Project
+
+## Project Overview
+
+SUNote is a mobile academic note-sharing platform developed as part of the **CS310 – Mobile Application Development** course at **Sabancı University**. The application is built using **Flutter** and **Firebase** and is designed exclusively for Sabancı University students.
+
+The platform enables students to **upload, browse, purchase, download, rate, and comment on lecture notes** in a structured and secure environment. By centralizing course materials and introducing feedback mechanisms, SUNote transforms informal note sharing into a reliable, student-driven academic ecosystem.
 
 ---
 
-### Main Purpose  
-SUNote addresses a common pain point among Sabancı students — the constant struggle to find trustworthy notes scattered across WhatsApp, Telegram, and Google Drive. By centralizing all study materials in one verified and structured environment, SUNote saves time, eliminates disorganization, and creates an academic marketplace where high-quality notes are both accessible and rewarded.
+## Motivation
+
+University students frequently rely on peer-generated notes to supplement lectures; however, these materials are often scattered across messaging apps and cloud folders, making them difficult to organize, evaluate, and reuse. SUNote addresses this issue by providing a **centralized, verified, and structured platform** where students can access high-quality notes and contributors can receive recognition (and optional monetary compensation) for their work.
+
+The project aims to demonstrate:
+- Practical mobile application development with Flutter  
+- Integration of Firebase services (Authentication, Firestore, Storage)  
+- Effective state management using Provider  
+- Secure data handling and user-based authorization  
+- Team-based software development and documentation  
 
 ---
 
-### Target Audience  
-The app is designed for **Sabancı University students** who value organized, credible, and easily accessible course materials. It serves both **active learners** who want fast access to relevant notes and **contributors** who wish to monetize their study materials.
+## Main Features
+
+- **Sabancı Email Authentication**  
+  User authentication is handled via Firebase Authentication, restricting access to verified Sabancı University students only.
+
+- **Structured Note Browsing**  
+  Notes are organized by **Course → Term → Week**, enabling fast and intuitive navigation.
+
+- **Upload & Sell Notes**  
+  Users can upload lecture notes (PDF/JPG), assign metadata, set a price, and make their notes available to others.
+
+- **Purchase & Download System**  
+  Users can purchase notes and re-download previously purchased materials without repetition.
+
+- **Rating & Comment System**  
+  Purchased notes can be rated and commented on, allowing quality evaluation and transparency.
+
+- **User & TA Profiles**  
+  Each user has a profile page displaying uploaded notes, total downloads, ratings, and a customizable “About” section.
+
+- **Light / Dark Theme Support**  
+  Theme preferences are saved locally and persist across app restarts.
 
 ---
 
-### Core Features  
-1. **Course–Term–Week Navigation:** Organized browsing structure for instant access.  
-2. **Upload & Sell Notes:** Upload lecture notes or weekly summaries in PDF/JPG format, set a price, and start earning.  
-3. **Search & Filter:** Quickly find content using course codes, keywords, or week tags.  
-4. **Upvote System:** Community-based ranking that highlights the most useful notes.  
-5. **Sabancı Email Authentication:** Ensures a secure and verified student-only network.
+## Technology Stack
+
+- **Frontend:** Flutter  
+- **Backend:** Firebase  
+  - Firebase Authentication  
+  - Cloud Firestore  
+  - Firebase Storage  
+- **State Management:** Provider  
+- **Testing:** Flutter widget and unit tests  
 
 ---
 
-### Test Cases 
-Widget test: The Login/Register buttons on the WelcomeScreen are moving in the correct direction. 
+## Firebase Usage Summary
 
-Unit test: Verifies that ThemeProvider permanently saves the theme value after changing it from SharedPreferences.
+- **Authentication:**  
+  Firebase Authentication manages user login and session handling using email/password.
+
+- **Cloud Firestore:**  
+  Used to store structured data including:
+  - Users (profiles, about section)
+  - Notes (metadata, pricing, download counts)
+  - Comments and ratings
+  - Purchase records
+
+- **Firebase Storage:**  
+  Handles storage of uploaded note files (PDF/JPG).
+
+- **Security Rules:**  
+  Firestore rules ensure that:
+  - Only authenticated users can read/write data  
+  - Users can only modify their own content  
+  - Commenting and rating are restricted to valid users  
 
 ---
-### Optional (Nice-to-Have) Features  
-- **Anonymous Q&A Threads:** Dedicated spaces for academic discussions.  
-- **TA Badge System:** Highlights trusted and verified contributors.  
-- **Premium Search Tools:** Advanced filters and personalized recommendations.
+
+## State Management Approach
+
+SUNote uses the **Provider** package to manage application state. Separate providers handle:
+- Authentication state  
+- Notes data and Firestore streams  
+- Theme preferences  
+
+This structure ensures consistent state across screens, minimizes redundant data fetching, and enables real-time UI updates using Firestore streams.
 
 ---
 
-### Team Members & Roles  
-- **Kaan Merdol** — Project Coordinator  
-- **Mustafa Mervan Temel** — Integration & Repository Lead  
-- **Fatma Ilgın Puhar** — Documentation & Submission Lead  
-- **Alp Pişkin** — Testing & Quality Assurance Lead  
-- **Efe Kaan Baydan** — Presentation & Communication Lead
+## Setup & Run Instructions
+
+### Prerequisites
+- **Flutter SDK:** 3.x or newer  
+- **Dart:** Compatible with Flutter version  
+- **Firebase Project:** Configured for Android and/or iOS  
+- **Android Studio / Xcode:** For emulator or device testing  
+
+### Step-by-Step Setup
+
+1. **Clone the repository**
+   ```bash
+   git clone <repository-url>
+   cd SUNote
