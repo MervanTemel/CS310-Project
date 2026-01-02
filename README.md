@@ -180,7 +180,8 @@ All tests pass successfully when running flutter test.
 - Performance may degrade with very large datasets due to Firestore document size limitations.
 - These limitations are acknowledged and considered acceptable within the scope of the CS310 course project.
 - 
-###Team Members and Contributions
+## Team Members and Contributions
+
 **Kaan Merdol** – Project Coordinator & Backend Integration
 **Mustafa Mervan Temel** – Integration & Repository Management
 **Fatma Ilgın Puhur** – Documentation & Submission
