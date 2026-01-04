@@ -19,12 +19,12 @@ class _HomeScreenState extends State<HomeScreen> {
   String _searchQuery = '';
 
   final List<Map<String, dynamic>> _categories = [
-    {'name': 'CS204', 'icon': Icons.computer, 'color': AppColors.categoryBlue},
-    {'name': 'MATH306', 'icon': Icons.calculate, 'color': AppColors.categoryPurple},
-    {'name': 'HIST191', 'icon': Icons.history_edu, 'color': AppColors.categoryOrange},
-    {'name': 'ECON201', 'icon': Icons.attach_money, 'color': AppColors.categoryGreen},
-    {'name': 'CS310', 'icon': Icons.phone_android, 'color': AppColors.categoryCyan},
-    {'name': 'NS101', 'icon': Icons.science, 'color': AppColors.categoryPink},
+    {'name': 'CS', 'icon': Icons.computer, 'color': AppColors.categoryBlue},
+    {'name': 'MATH', 'icon': Icons.calculate, 'color': AppColors.categoryPurple},
+    {'name': 'SPS', 'icon': Icons.history_edu, 'color': AppColors.categoryOrange},
+    {'name': 'ECON', 'icon': Icons.attach_money, 'color': AppColors.categoryGreen},
+    {'name': 'EE', 'icon': Icons.phone_android, 'color': AppColors.categoryCyan},
+    {'name': 'NS', 'icon': Icons.science, 'color': AppColors.categoryPink},
   ];
 
   @override
